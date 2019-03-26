@@ -15,5 +15,14 @@ If MariosPizza is running correctly you can open a browser and navigate to http:
 ```
 sudo snap install dotnet-sdk --classic
 ```
-3)
+3) Build the project by executing
+```
+sudo dotnet-sdk.dotnet build
+```
+4) Run the Selenium tests by executing 
+```
+sudo dotnet-sdk.dotnet test
+```
+
+*This will create a folder inside the project called "ScreenShots". Each screenshot share the name of the specific test that created it. The Screenshots are meant to serve as an extra layer of documentation*
 
