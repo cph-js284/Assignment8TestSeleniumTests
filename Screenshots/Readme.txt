@@ -1,0 +1,1 @@
+##Screenshots created durring the selenium tests will be placed in this folder
