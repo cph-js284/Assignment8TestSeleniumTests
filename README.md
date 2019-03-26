@@ -10,7 +10,7 @@ First make sure you have MariosPizza webinterface up and running - do this by fo
 If MariosPizza is running correctly you can open a browser and navigate to http://localhost:8080 <br>
 <br>
 <b>Now to run the Selenium tests</b><br>
-1) Clone the repo
+1) Clone the repo *(Note: do not clone this repo into the same repo containing the webinterface)*
 2) if you dont have dotnet-core installed, do so by executing
 ```
 sudo snap install dotnet-sdk --classic
