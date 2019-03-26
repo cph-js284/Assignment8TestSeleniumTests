@@ -26,3 +26,34 @@ sudo dotnet-sdk.dotnet test
 
 *This will create a folder inside the project called "ScreenShots". Each screenshot share the name of the specific test that created it. The Screenshots are meant to serve as an extra layer of documentation*
 
+# what is tested
+The webinterface is tested for the following:
+```
+Test                                            Expected                            Actual
+
+FROM HOME(ROOT)
+Connection to localhost:8080                    Correct page title                  As expected
+Connection to localhost:8080/home               Correct page title                  As expected
+Connection to localhost:8080/Order              Correct page title                  As expected
+Connection to localhost:8080/privacy            Correct page title                  As expected
+Click on the link to page:home                  Follows links to correct page       As expected
+Click on the link to page:Order                 Follows links to correct page       As expected
+Click on the link to page:privacy               Follows links to correct page       As expected
+
+
+FROM ORDER
+Button "Show all orders"                        Shows page containing all orders    As expected
+Button "Place new order"                        Shows page w/new orderform          As expected
+
+FROM PLACEORDER
+Fill in only name                               Customer name field is filled       As expected
+Choose only pizza from dropdown                 Selected pizza contained in dropd   As expected
+Choose only pizza from dropdown, click add      Selection displayed in orderarea    As expected
+Fill in name, click submit order                Approriate errormsg displayed       As expected
+Select pizza,add, click submit order            Approriate errormsg displayed       As expected
+Fill name, select pizza, add, submit            Order is approved                   As expected
+
+FROM SHOWALLORDER
+Remove order, clicked                           Order is removed from system        As expected
+```
+
