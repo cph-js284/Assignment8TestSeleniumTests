@@ -2,7 +2,7 @@
 This is a project that contains the Selenium tests to be run against the mario pizza webinterface
 
 # What is it
-This is a C# dotnet-core project that runs the Selenium webdriver against a running webinterface of MariosPizza, on losthost:8080
+This is a C# dotnet-core project that runs the Selenium webdriver against a running webinterface of MariosPizza, on losthost:8080. This project uses the geckodriver(Firefox)
 
 # Setup
 First make sure you have MariosPizza webinterface up and running - do this by following the instructions here [Setup MariosPizza](https://github.com/cph-js284/Assignment8Test)
